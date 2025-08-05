@@ -1,0 +1,135 @@
+body {
+  font-family: 'Roboto', 'Raleway', Arial, sans-serif;
+    color: #2E2F42;
+}
+.container .part1 {
+    font-size: 18px;
+    line-height: 1.17;
+    color: #4D5AE5;
+    font-weight: 700;
+}
+.container .part2 {
+    font-size: 18px;
+    line-height: 1.17;
+    color: #2E2F42;
+    font-weight: 700;
+}
+.main-nav > li {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+.main-nav .nav-list{
+    color: #2E2F42;
+}
+.main-nav .nav-list a {
+    color: #2E2F42;
+    text-decoration: none;
+}
+.main-nav .nav-list a:hover,
+.main-nav .nav-list a:focus {
+    color: #404BBF;
+}
+.contacts {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #434455;
+}
+.contacts a:hover,
+.contacts a:focus {
+    color: #404BBF
+}
+
+.hero {
+    background-color: #2E2F42;
+    color:#FFFFFF;
+} 
+.main-title {
+    font-size: 56px;
+    line-height: 1.07;
+
+}
+.order-button {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    background-color: #4D5AE5;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.order-button:hover,
+.order-button:focus {
+    background-color: #404BBF;
+}
+.about .about-title {
+    font-size: 20px;
+    line-height: 1.2;
+    color:#2E2F42;
+    font-weight: 500;
+
+}
+.about .about-text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #434455;
+}
+.team {
+    background-color: #F4F4FD;
+}
+.team .team-title {
+    font-size: 36px;
+    line-height: 1.11;
+    color: #2E2F42;
+
+}
+.team-list .team-member-name {
+    font-size: 20px;
+    line-height: 1.2;
+    color: #2E2F42;
+    font-weight: 500;
+
+}
+.team-list .team-member-role {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #434455;
+}
+.portfolio .portfolio-title {
+    font-size: 36px;   
+    line-height: 1.11;
+    color: #2E2F42;
+ 
+}
+.portfolio-list .portfolio-item-title {
+    font-size: 20px;
+    line-height: 1.2;
+    color: #2E2F42;
+    font-weight: 500;
+
+}
+.portfolio-list .portfolio-item-category {
+    font-size: 16px;
+    line-height: 1.5;
+    color:#434455;
+}
+.footer{
+    background-color: #2E2F42;
+}
+.footer .part1 {
+    font-size: 18px;
+    line-height: 1.17;
+    color:#4D5AE5;
+    font-weight: 700;
+
+}
+.footer .part2 {
+    font-size: 18px;
+    line-height: 1.17;
+    color:#F4F4FD;
+    font-weight: 700;
+}
+.footer .footer-text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #F4F4FD;
+}
