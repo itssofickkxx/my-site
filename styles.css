@@ -1,6 +1,34 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Roboto', 'Raleway', Arial, sans-serif;
     color: #2E2F42;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+    padding:0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+.container{
+    max-width: 1158px;
+    margin: 0 auto;
 }
 .container .part1 {
     font-size: 18px;
@@ -14,13 +42,28 @@ body {
     color: #2E2F42;
     font-weight: 700;
 }
-.main-nav > li {
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+  background-color: aquamarine;
+}
+
+.main-nav .nav-list {
+    display: flex;
+    gap: 40px;                       /* расстояние между пунктами меню */
+    align-items: center;             /* выравнивание пунктов по центру */
+    margin: 0;                       /* сброс внешних отступов */
+    padding: 0;                      /* сброс внутренних отступов ul */
+    list-style: none;                /* убрать маркеры */
+    color: #2E2F42;
+    
+}
+.main-nav .nav-list li {
     font-size: 16px;
     line-height: 1.5;
     font-weight: 500;
-}
-.main-nav .nav-list{
-    color: #2E2F42;
 }
 .main-nav .nav-list a {
     color: #2E2F42;
@@ -34,19 +77,35 @@ body {
     font-size: 16px;
     line-height: 1.5;
     color: #434455;
+    display: flex;
+    gap: 40px;
+    font-style: normal;
+    justify-content: flex-start;
+     
 }
 .contacts a:hover,
 .contacts a:focus {
-    color: #404BBF
+    color: #404BBF;
+    text-decoration: none;
+}
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    justify-content: center;
 }
 
 .hero {
     background-color: #2E2F42;
     color:#FFFFFF;
+    height: 600px;
 } 
 .main-title {
     font-size: 56px;
     line-height: 1.07;
+    padding-top: 200px;
 
 }
 .order-button {
@@ -56,22 +115,88 @@ body {
     background-color: #4D5AE5;
     color: #FFFFFF;
     cursor: pointer;
+    display: flex;
+    border-radius: 4px;
+    border: 4px solid #4D5AE5;
+    padding: 16px 32px;
 }
 .order-button:hover,
 .order-button:focus {
     background-color: #404BBF;
 }
+.about {
+    height: 104px;
+}
+.about-list {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    align-items: flex-start;
+    margin-top: 120px;
+}
+.team {
+    margin-top: 120px;
+    height: 732px;
+    padding-top: 100px;
+}
+.team.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.team.item p {
+  margin-top: 10px;
+}
+
 .about .about-title {
     font-size: 20px;
     line-height: 1.2;
     color:#2E2F42;
     font-weight: 500;
-
 }
 .about .about-text {
     font-size: 16px;
     line-height: 1.5;
     color: #434455;
+}
+.team .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.team-list {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding-bottom: 32px;
+    margin-bottom: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    height: 380px;
+}
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color: #FFFFFF;
+    width: 264px;            /* Hug width */
+    height: 380px; 
+}
+.team-member h3 {
+    margin-top: 20px;
+}
+.image {
+    width: 100%;          /* растягиваем по ширине карточки */
+    height: 260px;        /* фиксированная высота */
+    object-fit: cover;
+    display: block;
+    border-radius: 4px;   /* скругленные углы */
 }
 .team {
     background-color: #F4F4FD;
@@ -80,7 +205,6 @@ body {
     font-size: 36px;
     line-height: 1.11;
     color: #2E2F42;
-
 }
 .team-list .team-member-name {
     font-size: 20px;
@@ -93,6 +217,29 @@ body {
     font-size: 16px;
     line-height: 1.5;
     color: #434455;
+}
+.portfolio .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+    justify-content: center;
+}
+.portfolio-list {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    padding-bottom: 32px;
+    margin-bottom: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.portfolio-item {
+    border-right: 1px solid #E7E9FC;
+    border-bottom: 1px solid #E7E9FC;
+    border-left: 1px solid #E7E9FC;
+    height: 420px;
 }
 .portfolio .portfolio-title {
     font-size: 36px;   
